@@ -1,0 +1,16 @@
+Le script "Script_fin.sh" transforme tous les fichiers "<régions>.txt" en un archive contenant les informations des ".txt" dans un pdf.
+
+Pour le lancer :
+./Script_fin
+
+Il faut au préalable :
+- Avoir des dossiers ".txt" respectant les conditions "Titre", "Sous-titre", etc.. (peut importe la casse des mots clé)
+- Il faut que les images (en svg) soient placées dans un dossier "images"
+- Les logos soient dans un dossier "logos"
+- Tous les script, les "<region>.txt", region.conf et le css doivent être dans le dossier suivant : "/Docker/<login>"
+
+Il faut également 'pull' les dockers à la main avec les commandes suivantes :
+    docker pull sae103-imagick
+    docker pull sae103-php
+    docker pull sae103-html2pdf
+    docker pull qrcode
